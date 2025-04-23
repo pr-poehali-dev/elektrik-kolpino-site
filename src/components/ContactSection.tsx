@@ -28,7 +28,7 @@ const ContactSection = () => {
           <div>
             <p className="font-semibold">WhatsApp:</p>
             <a 
-              href="https://wa.me/89500308830" 
+              href="https://wa.me/79500308830" 
               className="text-blue-700 hover:underline"
             >
               Написать в WhatsApp
