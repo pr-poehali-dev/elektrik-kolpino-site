@@ -6,7 +6,7 @@ export default {
 		"./pages/**/*.{ts,tsx}",
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
-		"./src/**/*.{ts,tsx}",
+		"./src/**/*.{ts,tsx}"
 	],
 	prefix: "",
 	theme: {
@@ -61,7 +61,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				paper: '#f5f3e8',
+				newsprint: '#f2f0e6',
+				headline: '#1a1a1a',
+				column: '#0c0c0c',
+			},
+			fontFamily: {
+				serif: ['Georgia', 'Times New Roman', 'serif'],
+				headline: ['Georgia', 'Times New Roman', 'serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -92,5 +100,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 } satisfies Config;
